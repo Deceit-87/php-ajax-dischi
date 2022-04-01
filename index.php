@@ -90,7 +90,34 @@ $disc = [
 <?php
 foreach($disc as $album):
 
-echo 'suka';
+?>
+
+<div class="card-wrapper">
+      <figure class="card-thumb">
+
+          <img src="<?=$album['poster'];?>" alt="">
+
+      </figure>
+      <div class="card-info">
+
+          <h3>
+           <?= $album['title']; ?>
+          </h3>
+          <p>
+          <?= $album['author']; ?>
+          </p>
+          <p>
+           <?= $album['year']; ?>
+          </p>
+
+      </div>
+  </div>
+
+
+
+
+
+<?php
 
 
 endforeach;
