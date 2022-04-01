@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+}
+
+body {
+    background-color: #1e2d3b;
+    max-width: 1970px;
+    height: 100vh;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+* img {
+    max-width: 100%;
+}
+
+.select-album {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.select-album select {
+    background: #1ed760;
+    border: none;
+    padding: 5px 9px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #35424f;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1195px;
+    margin: 0 auto;
+    height: 750px;
+    margin-top: 80px;
+}
+
+.album-list {
+    display: contents;
+}
+
+
+/* HEADER   */
+
+.header {
+    background: rgba(255, 255, 255, 0.1);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 5px 0 5px 5px;
+    font-size: 48px;
+    color: #1ed760;
+    padding-left: 15px;
+}
+
+
+/* CARD WRAPPER  */
+
+.card-wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 357px;
+    max-width: 16%;
+    margin: 0 20px 20px;
+    background: rgba(255, 253, 253, 0.1);
+}
+
+.card-wrapper .card-thumb img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.card-wrapper .card-info {
+    font-size: 16px;
+    width: 95%;
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.card-info h3 {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
